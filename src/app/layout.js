@@ -1,7 +1,10 @@
 import { Inter } from "next/font/google";
+import { MedievalSharp } from "next/font/google";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const medieval = MedievalSharp({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
   title: "Create Next App",

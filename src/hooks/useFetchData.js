@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-export const useFetchData = () => {
+export const useFetchData = (selection) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -11,6 +11,9 @@ export const useFetchData = () => {
 
 
   useEffect(() => {
+    if(!selection){
+      return
+    }
     async function fetchData() {
       const url = apiUrl + "/" + "book";
       try {
