@@ -28,10 +28,13 @@ export const Dashboard = () => {
   };
 
   return (
-    <div className="flex flex-col gap-5   ">
+    <div className="flex flex-1 flex-col gap-5 h-screen items-center">
+      <div>
       <Options selection={selection} setSelection={onClickHandler} />
       {(loading) && (<Loader />)}
       {(data && !loading) && (dataRender[selection])}
+      </div>
+      
     </div>
   );
 };
