@@ -1,5 +1,7 @@
+require("dotenv").config()
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+
 
 export const useFetchData = (selection) => {
   const [data, setData] = useState(null);
@@ -7,20 +9,29 @@ export const useFetchData = (selection) => {
   const [error, setError] = useState(null);
 
   const apiUrl = "https://the-one-api.dev/v2/";
-  const APITOKEN = process.env.REACT_APP_API_KEY;
+  const APITOKEN = process.env.NEXT_PUBLIC_API_KEY;
 
+  let options = {
+    method: "GET",
+    headers: {
+      'Authorization': `Bearer ${APITOKEN}`,
+    },
+  };
 
   useEffect(() => {
-    if(!selection){
-      return
+    if (!selection) {
+      return;
     }
+    setLoading(true);
     async function fetchData() {
-      const url = apiUrl + "/" + "book";
+      const url = apiUrl + "/" + selection;
+
       try {
-        const res = await fetch(url);
+        const res = await fetch(url, options);
         const jsonData = await res.json();
         console.log("DATA: ", jsonData);
-        setData(data);
+
+        setData(jsonData);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -28,7 +39,7 @@ export const useFetchData = (selection) => {
       }
     }
     fetchData();
-  }, []);
+  }, [selection]);
 
-  return {data, error, loading };
+  return { data, error, loading };
 };
