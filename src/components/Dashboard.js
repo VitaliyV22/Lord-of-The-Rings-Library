@@ -28,7 +28,7 @@ export const Dashboard = () => {
   };
 
   return (
-    <div className="flex flex-1 flex-col gap-5 h-screen items-center">
+    <div className="flex flex-col items-center justify-center h-screen">
       <div>
       <Options selection={selection} setSelection={onClickHandler} />
       {(loading) && (<Loader />)}
