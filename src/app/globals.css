@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.scrollbar {
+    padding-right: calc(100vw - 100%);
+  }

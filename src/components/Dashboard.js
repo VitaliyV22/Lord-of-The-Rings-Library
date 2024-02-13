@@ -31,7 +31,8 @@ export const Dashboard = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="">
+   
       <div>
       <Options selection={selection} setSelection={onClickHandler} />
       {(loading) && (<Loader />)}

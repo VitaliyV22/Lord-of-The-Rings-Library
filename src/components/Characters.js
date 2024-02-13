@@ -1,30 +1,55 @@
-import React from 'react'
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 
 export const Characters = (props) => {
-  
-const [char, setChar] = useState('')
-const mappedList = data.docs.filter(element => {
-  if (char == ''){
-    return true
-  }
-  if (element.includes(char)){
-    return true
-  }
-  return false
-})
   const { data } = props;
+
+  const [char, setChar] = useState("");
+  const mappedList = data.docs.filter((element) => {
+    if (char == "") {
+      return true;
+    }
+    if (element['name'].includes(char)) {
+      return true;
+    }
+    return false;
+  });
+
   return (
-    <div className="flex flex-col w-screen items-center mt-5 p-10 gap-3 h-[500px] overflow-y-scroll">
-     <input className='border border-black rounded-md h-5 ' type="text" />
-    
-    {mappedList.map((char, index) => {
-      return <div key={index}>
-        {}
+    <div className="flex text-white  flex-col w-screen items-center  p-5  h-[800px] overflow-y-scroll ">
+      <div><input className=" bg-white bg-opacity-10 text-center h-5 " type="text" value={char} placeholder="Character Name" onChange={(e) => {
+        setChar(e.target.value)
+      }}/></div>
+      <div className="text-center flex flex-col mt-5  gap-10 bg-white bg-opacity-10 w-[350px]">
+      {mappedList.map((char, index) => {
+        const keys = Object.keys(char).filter((element) => {
+          if (element == "name" || element == "_id" || element == "wikiUrl") {
+            return false;
+          }
+          if (!char[element]) {
+            return false;
+          }
+          return true;
+        });
+
+        return (
+          <div key={index}>
+            <h1 className="text-2xl bg-white bg-opacity-10"> {char.name} </h1>
+            {keys.map((title) => {
+              return (
+                <div key={title}>
+                  <p>
+                    {" "}
+                    {title} :{char[title]}{" "}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
       </div>
-    
       
-    })}
     </div>
-  )
-}
+  );
+};
