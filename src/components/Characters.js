@@ -20,7 +20,7 @@ export const Characters = (props) => {
       <div><input className=" bg-white bg-opacity-10 text-center h-5 " type="text" value={char} placeholder="Character Name" onChange={(e) => {
         setChar(e.target.value)
       }}/></div>
-      <div className="text-center flex flex-col mt-5  gap-10 bg-white bg-opacity-10 w-[350px]">
+      <div className="text-center flex flex-col mt-5  gap-10 bg-white bg-opacity-10 w-[90%]">
       {mappedList.map((char, index) => {
         const keys = Object.keys(char).filter((element) => {
           if (element == "name" || element == "_id" || element == "wikiUrl") {

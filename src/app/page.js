@@ -8,7 +8,7 @@ export default function Home() {
         src="https://wallpaperaccess.com/full/4472566.jpg"
         alt=""
       />
-      <div className="relative z-10"><Dashboard /></div>
+      <div className="relative z-10 w-full h-screen"><Dashboard /></div>
       
     </>
   );

@@ -8,11 +8,11 @@ export const Options = (props) => {
   console.log("SELECTION VALUE: ", selection);
   return (
     <div>
-      <div className=" font-[MedivalSharp]  flex flex-col justify-center  gap-10 items-center">
+      <div className=" font-[MedivalSharp] flex flex-col justify-center gap-10 items-center">
         <div>
           <h1 className=" font-medium text-white rounded-md p-2 text-center bg-white bg-opacity-10 text-4xl ">Lord of The Rings Librarian</h1>
         </div>
-        <div className="flex gap-5 justify-center items-center text-2xl bg-opacity-10">
+        <div className="flex gap-5 justify-center items-center w-screen text-2xl bg-opacity-10">
           {options.map((option, index) => {
             return (
               <button  onClick={setSelection(option)}

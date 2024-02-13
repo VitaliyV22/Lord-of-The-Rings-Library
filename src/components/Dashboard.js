@@ -31,7 +31,7 @@ export const Dashboard = () => {
   };
 
   return (
-    <div className="">
+    <div>
    
       <div>
       <Options selection={selection} setSelection={onClickHandler} />
