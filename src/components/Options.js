@@ -10,7 +10,7 @@ export const Options = (props) => {
     <div>
       <div className=" font-[MedivalSharp]  flex flex-col justify-center  gap-10 items-center">
         <div>
-          <h1 className=" font-medium text-white rounded-md p-2 bg-white bg-opacity-10 text-4xl ">Lord of The Rings Librarian</h1>
+          <h1 className=" font-medium text-white rounded-md p-2 text-center bg-white bg-opacity-10 text-4xl ">Lord of The Rings Librarian</h1>
         </div>
         <div className="flex gap-5 justify-center items-center text-2xl bg-opacity-10">
           {options.map((option, index) => {
