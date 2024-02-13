@@ -10,6 +10,7 @@ import { Movies } from "./Movies";
 import { Quotes } from "./Quotes";
 
 export const Dashboard = () => {
+  const [searchQuery, setSearchQuery] = useState('');
   const [selection, setSelection] = useState(null);
 
   const { data, loading, error } = useFetchData(selection);
@@ -19,6 +20,8 @@ export const Dashboard = () => {
       setSelection(clickedButton);
     };
   }
+
+  
 
   const dataRender = {
     character: <Characters data={data} />,
