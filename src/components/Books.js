@@ -12,6 +12,7 @@ export const Books = (props) => {
           >
             <h1 className="text-2xl bg-white bg-opacity-20">{book.name}</h1>
           </div>
+         
         );
       })}
     </div>
