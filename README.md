@@ -6,12 +6,17 @@ Welcome to the Lord of the Rings Search Project! This project allows users to se
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Purpose](#purpose)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Setup](#setup)
+- [Usage](#usage)
+
 
 ## Introduction
 This project is a single-page application (SPA) built using Next.js, Tailwind CSS, and React JavaScript. It leverages the One API, a free Lord of the Rings API, to fetch data related to characters, books, movies, and quotes from the series.
+
+## Purpose
+-I built this application to showcase it on my portfolio as a project where I can use an API and build something around it using REACT.
 
 ## Features
 - Search for characters, books, movies, and quotes related to "The Lord of the Rings".
@@ -24,13 +29,6 @@ This project is a single-page application (SPA) built using Next.js, Tailwind CS
 - React JavaScript
 - One API (Free Lord of the Rings API)
 
-## Setup
-1. Clone this repository to your local machine.
-2. Navigate to the project directory.
-3. Install dependencies using `npm install`.
-4. Create a `.env.local` file in the root directory and add your One API key. (Example: `NEXT_PUBLIC_ONE_API_KEY=your_api_key_here`)
-5. Run the development server using `npm run dev`.
-6. Open `http://localhost:3000` in your web browser to view the application.
 
 ## Usage
 1. Enter your search query in the search bar.
