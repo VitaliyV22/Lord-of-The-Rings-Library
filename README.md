@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lord of the Rings Librarian
 
-## Getting Started
+DEMO : https://master.dznzdu9yy1b1u.amplifyapp.com/
 
-First, run the development server:
+Welcome to the Lord of the Rings Search Project! This project allows users to search for characters, books, movies, and quotes related to the beloved fantasy series "The Lord of the Rings". 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
+- [Introduction](#introduction)
+- [Purpose](#purpose)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Introduction
+This project is a single-page application (SPA) built using Next.js, Tailwind CSS, and React JavaScript. It leverages the One API, a free Lord of the Rings API, to fetch data related to characters, books, movies, and quotes from the series.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Purpose
+-I built this application to showcase it on my portfolio as a project where I can use an API and build something around it using REACT.
 
-## Learn More
+## Features
+- Search for characters, books, movies, and quotes related to "The Lord of the Rings".
+- View detailed information about each search result.
+- Responsive design for seamless use on different devices.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
+- Next.js 13
+- Tailwind CSS
+- React JavaScript
+- One API (Free Lord of the Rings API)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
+1. Enter your search query in the search bar.
+2. Select the type of search (characters, books, movies, or quotes) from the dropdown menu.
+3. Press the "Search" button to fetch results.
+4. Click on any search result to view detailed information.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
