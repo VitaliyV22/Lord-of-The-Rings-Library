@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-
-
 export const Quotes = (props) => {
   const { data } = props;
   const [searchTerm, setSearchTerm] = useState("");
@@ -23,12 +21,16 @@ export const Quotes = (props) => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <div><h1 className="text-center"></h1></div>
-      <div className="flex flex-col text-white items-center p-10 gap-3 h-[800px] overflow-y-scroll">
-        <div className="text-center flex flex-col mt-5 gap-10 bg-white bg-opacity-10 w-[90%]">
+
+      <div className="text-white w-screen h-[750px] gap-4 overflow-y-scroll ">
+        <div className="text-center lg:grid lg:grid-cols-3 justify-center items-center m-5 mt-8 gap-8 bg-opacity-10 ">
           {filteredQuotes.map((quote, index) => (
-            <div className="hover:font-bold cursor-pointer" key={index}>
-              {quote.dialog}
+            <div
+              className="text-2xl italic bg-black bg-opacity-30 cursor-pointer hover:shadow-xl hover:shadow-black border-gray-500 h-auto  rounded-xl  font-bold"
+              key={index}
+            >
+              "{quote.dialog}
+              "
             </div>
           ))}
         </div>

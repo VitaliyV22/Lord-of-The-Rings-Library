@@ -12,7 +12,7 @@ export const Options = (props) => {
         <div>
           <h1 className=" font-medium text-white rounded-md p-2 text-center text-4xl ">Lord of The Rings Librarian</h1>
         </div>
-        <div className="flex gap-5  text-2xl">
+        <div className="lg:flex gap-5 text-2xl">
           {options.map((option, index) => {
             return (
               <button  onClick={setSelection(option)}
