@@ -8,7 +8,7 @@ Welcome to the Lord of the Rings Search Project! This project allows users to se
 This project is a single-page application (SPA) built using Next.js, Tailwind CSS, and React JavaScript. It leverages the One API, a free Lord of the Rings API, to fetch data related to characters, books, movies, and quotes from the series.
 
 ## Purpose
--I built this application to showcase it on my portfolio as a project where I can use an API and build something around it using REACT JS.
+I built this application to showcase it on my portfolio as a project where I can use an API and build something around it using REACT JS.
 
 ## Features
 - Search for characters, books, movies, and quotes related to "The Lord of the Rings".
